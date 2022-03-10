@@ -1,0 +1,201 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+}
+
+#container_app{
+    width: 60%;
+    height: 80vh;
+    
+    margin: 50px auto;
+}
+header, footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+header h1{
+    font-size: 1.6em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(16, 143, 165) ;
+    line-height: 60px;
+
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 120px);
+    
+    position: relative;
+    background-image: url(img/sfondo3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+
+}
+main #ingredients{
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid#3d3d3d;
+}
+
+.boxIngredients {
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    background-color:rgba(0,0,0,0.7);
+    border: 1px solid whitesmoke;
+    margin-top: 4px;
+    position: relative;
+    
+
+}
+::-webkit-scrollbar{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 0.4em;
+    border-radius: 10px;
+    
+}
+
+
+::-webkit-scrollbar-thumb{
+    min-height:0.6em;
+    min-width:0.4em;
+    background-color: rgba(0,245,0,0.8);
+    border: none;
+}
+
+.boxIngredients label {
+    margin-left: 20% ;
+    margin-top: 10px;
+    font-family: monospace;
+    color:whitesmoke;
+    position: absolute;
+
+}
+.boxIngredients input{
+    margin-top: 6px;
+    margin-left: 1%;
+    outline: none;
+    border: none;
+    width: 10px;
+    height: 10px;
+    
+}
+input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked{
+  background-color: aqua; 
+}
+#prezzo {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+
+#totalePanino{
+    width: 60%;
+    height: 90%;
+     background-image: url(img/sfondo3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.totale{
+    width: 90%;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin: 30% auto;
+    border: 1px solid whitesmoke;
+}
+.totale h2{
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.totale h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+}
+footer{
+    position: relative;
+    
+}
+footer #container_coupon{
+    width: 50%;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+}
+footer #container_coupon input{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+footer #container_coupon input{
+    text-align: center;
+    color: #4d4d4d;
+    font-family: monospace;
+    font-size: 1em;
+
+}
+footer #container_button{
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 60px;
+
+}
+#calcola{
+    width: 60%;
+    height: 40px;
+    margin-left: 30px ;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(16, 143, 165);
+}
+#calcola > #text-button{
+    font-family: monospace;
+    color: white;
+    font-weight: 700;
+    font-size: 0.6em;
+    letter-spacing: 1.5px;
+    
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    input, label{
+        font-size: 0.7em;
+    }
+    .totale span{
+
+        font-size: 0.7em;
+
+    }
+
+}
